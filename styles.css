@@ -1,0 +1,583 @@
+body {
+    font-family: 'Poppins', sans-serif !important;
+    text-align: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    /* make scrollbar transparent */
+}
+
+
+/* Title Section1*/
+#title {
+    color: #fff;
+    text-align: left;
+    background-color: #5268F2;
+    background-image: url(https://mishipay.com/wp-content/uploads/2021/04/Disk-animation.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.colored-section {
+    padding: 3% 5%;
+}
+
+
+/* title button */
+.title-button {
+    font: 'Poppins', sans-serif;
+    font-size: 20px;
+    border-radius: 25px;
+    padding: 12px 40px;
+    background-color: #39A53C;
+    border: 1px solid white;
+    color: white;
+}
+
+.heading button:hover {
+    background-color: #f2f2f2;
+    color: #5268F2;
+}
+
+/* Section 2 */
+.white-section1 {
+    background-color: #fff;
+    padding: 5% 5%;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600 !important;
+    color: #4c5267;
+}
+
+.view-button {
+    fill: #FFF;
+    color: #FFF;
+    background-color: #5268F2;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #5268F2;
+    border-radius: 50px 50px 50px 50px;
+    padding: 14px 30px;
+}
+
+.white-section1 button:hover {
+    background-color: white;
+    color: #5268F2;
+    border: 2px solid #5268F2;
+}
+
+/* Section 3 */
+.white-section2 {
+    background-color: #f2f2f2;
+    padding: 5% 5%;
+}
+
+/* Business */
+
+.brands {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.numbers {
+    font-family: 'Poppins', sans-serif;
+    font-size: 69px;
+    font-weight: 600;
+    line-height: 1;
+    color: #5268F2;
+}
+@property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  h6 {
+    counter-set: num var(--num);
+  }
+  
+  h6:after {
+    content: counter(num);
+  }
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 0;
+}
+
+.context {
+    font-size: x-large;
+    font-weight: 400;
+    line-height: 2.5;
+    text-align: center;
+    color: #4c5267;
+}
+
+.business-value{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Display */
+
+/* Display */
+.display {
+    background-color: white;
+    padding: 4rem 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.display .card {
+    border-radius: 14px 14px 14px 14px !important;
+    background-color: #f7f7f7;
+    overflow: hidden;
+    max-width: 550px;
+    border: 0 transparent;
+
+}
+
+.display .card-img-top {
+    border-radius: 14px 14px 0 0 !important;
+    transition: 1s all ease-in-out;
+    overflow: hidden;
+
+}
+
+.display .cardimg {
+    max-width: 550px;
+    max-height: 200px !important;
+    overflow: hidden;
+}
+
+.display .card-img-top:hover {
+    transform: scale(1.2);
+    filter: brightness(75%);
+
+}
+
+.display .card-body {
+    padding: 35px;
+}
+
+.display div a {
+    background-color: #5268F2;
+    color: white;
+}
+
+.display div a:hover {
+    background-color: white;
+    color: #5268F2;
+    border: 2px solid #5268F2;
+}
+
+.display .card-button {
+    padding: 3%;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-radius: 15px;
+}
+
+/* solution */
+
+#testimonials {
+    background-color: White;
+}
+
+.solution .solution-title {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 600 !important;
+    color: #2c234d;
+    padding-bottom: 5%;
+    animation-duration: 2s;
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        padding-top: 100px;
+        opacity: .25;
+        line-height: 80px;
+    }
+
+    to {
+        padding-top: 0;
+        opacity: 1;
+        line-height: 25px;
+    }
+}
+
+.slide-up {
+    animation: slide-up 1.5s;
+}
+
+.route {
+    text-decoration: none;
+    color: #707b8e;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.seperation {
+    margin-top: 2rem;
+}
+
+.btns {
+    padding: 1rem 1rem;
+}
+
+.testimonial-btn {
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    color: #707b8e;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    margin: 0 5px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    min-width: 110px;
+    text-align: center;
+    background-color: white;
+}
+
+.dot{
+    transition: 1s all ease-in-out;
+}
+
+.solution button:hover {
+    background-color: #5268f2;
+    color: white !important;
+}
+.solution .btns a:hover {
+    background-color: #5268f2;
+    color: white !important;
+    cursor: pointer;
+}
+
+.testimonial-image {
+    width: 100%;
+    /* border-radius: 100%; */
+    margin: 10px;
+}
+
+.testimonial-carousel button {
+    border-radius: 25px;
+}
+
+.testimonial-carousel button:hover {
+    box-shadow: 0 20px 30px 0 rgb(9 78 130 / 20%);
+}
+
+.testimonial-image-client {
+    width: 20%;
+    border-radius: 100%;
+    margin: 10px;
+}
+
+.carousel-item {
+    padding: 1% 10%;
+}
+
+.item-img {
+    padding-left: 1rem;
+}
+
+.item-content {
+    text-align: left;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.item-content a {
+    margin-left: 4rem;
+    font-family: "Poppins", sans-serif;
+    border: 1px solid #5268f2;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    line-height: 18px;
+    border-radius: 25px;
+    font-size: 16px;
+    display: inline-block;
+    padding: 14px 35px;
+}
+
+.item-content a:hover {
+    background-color: #5268f2;
+    color: white;
+}
+
+.testimonial-text {
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    font-size: 2rem;
+    line-height: 44px;
+    font-weight: 600;
+    color: #2c234d;
+    font-family: "Poppins", sans-serif;
+    display: block;
+    margin-left: 4rem;
+    padding-top: 4rem;
+}
+
+.para {
+    color: #4c5267;
+    line-height: 2;
+    font-size: 20px;
+    margin-left: 4rem;
+}
+
+.angle-icon {
+    color: #5268f2;
+}
+
+.angle-button {
+    padding: 5% 10% 5% 10%;
+    border-radius: 50%;
+    border: 1px solid #5268f2;
+    background-color: white;
+
+}
+
+.angle-button:hover .angle-icon {
+    color: white;
+}
+
+.control-arrows button:hover {
+    background-color: #5268f2;
+    border: 1px solid white;
+    box-shadow: 0px 8px 8px -4px #5268f2;
+}
+
+/* Client Thoughts */
+
+.clients-title {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.client-carousel {
+    background: url(images/client_thoughts_bg.webp);
+    background-position: left;
+    background-repeat: no-repeat;
+    align-items: center;
+    padding-bottom: 9rem;
+}
+
+.client-carousel .client-image-client {
+    border-radius: 50%;
+    height: 10rem;
+    margin-bottom: 3rem;
+    align-self: center;
+    box-shadow: 0 20px 30px 0 rgba(8, 43, 70, 0.2);
+}
+
+.client-carousel .card {
+    border: none;
+    width: 48rem;
+    height: 42rem;
+    margin-left: 8rem;
+    align-content: center;
+    box-shadow: 0 20px 30px 0 rgb(9 78 130 / 20%);
+    padding-bottom: 37rem;
+    margin-bottom: 5rem;
+}
+
+.client-carousel .card-text {
+    font-size: 26px;
+    line-height: 34px;
+    color: #222E42;
+}
+
+.client-carousel .carousel-item {
+    padding-bottom: 6%;
+    padding-left: 10rem;
+}
+
+.arrow-icon {
+    color: #5268f2;
+}
+
+.arrow-button {
+    padding: 6% 10% 6% 10%;
+    border-radius: 50%;
+    border: 1px solid #5268f2;
+    background-color: white;
+}
+
+.arrow-button:hover .arrow-icon {
+    color: white;
+}
+
+/* Case Studies */
+.case-studies .card-deck {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2.5rem;
+}
+
+.case-studies .card {
+    margin-left: 2rem;
+    box-shadow: 0px 8px 8px -4px #4c5267;
+}
+
+.case-studies .card:hover {
+    box-shadow: 1px 10px 10px -2px #4c5267;
+}
+
+.case-studies p {
+    font-weight: 700;
+    font-size: large;
+    padding: 5% 2%;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.case-studies a {
+    font-weight: 700;
+    font-size: large;
+    padding: 5% 2%;
+    font-family: 'Poppins', sans-serif !important;
+    color: #5268f2;
+}
+
+.case-studies .card-body {
+    text-align: left;
+    vertical-align: middle;
+    justify-content: center;
+}
+
+.case-studies .card img {
+    width: 22rem;
+    height: 15rem;
+}
+
+.case-title {
+    padding-bottom: 4rem;
+}
+
+/* As Seen On */
+.seen-logo {
+    width: 16rem;
+}
+
+.seen-title {
+    padding-top: 5rem;
+}
+
+/* Partners */
+/* Autoplay */
+
+.partner-title{
+    margin-top: 3rem;
+}
+
+.slider {
+    height: 250px;
+    margin: auto;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    animation: scroll 40s linear infinite;
+}
+
+
+@keyframes scroll {
+    0% {
+        transform: translate(-50%, 0);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* Responsive code */
+@media(max-width:1200px) {
+    .title-text {
+        position: static;
+    }
+
+    .title-video {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        padding-top: 2rem;
+    }
+
+    .display-card{
+        margin-top: 5rem;
+    }   
+
+    .client-carousel .carousel-item{
+        padding: 2rem 2rem;
+    }
+
+    .case-studies-card{
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        
+
+    }
+    .case-studies-card .card-img-top{
+        width: 100%;
+        padding: 0;
+    }
+    .client-carousel .card{
+        margin: 0;
+        padding: 0;
+        width: fit-content;
+        height: fit-content;
+    }
+
+}
+
+@media(max-width:991px) {
+    .brand-img {
+        margin-left: 0rem;
+        align-items: center;
+    }
+}
+
+@media(max-width:400px){
+    .display-card{
+        width: 100%;
+    }
+    .case-studies-card{
+        width: 18rem;
+    }
+    .card-img-top{
+        width: 18rem;
+    }
+    .business-value{
+        align-items: center;
+    }
+}

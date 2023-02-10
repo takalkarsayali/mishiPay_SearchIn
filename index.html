@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    Website:
+        Heading
+        Brands
+        Values
+        Display
+        Solution
+        Client Thoughts
+        Case Studies
+        As seen on
+        Download
+        Partners
+ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Think Shopping! Think MishiPay! (🤳Scan and Go Technology)</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="demostyle.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Fontawsome -->
+    <script src="https://kit.fontawesome.com/0c468a3263.js" crossorigin="anonymous"></script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <style>
+        /* Navbar */
+        .colored-section {
+            font: 'Poppins', sans-serif !important;
+            font-size: 17px;
+        }
+
+        /* navlink hover - underline */
+        .navbar a::after {
+            content: '';
+            height: 0.5px;
+            /* width: 0%; */
+            background-color: white;
+            /* display: block; */
+            transition: .5s ease-in-out;
+        }
+
+        .navbar a:hover::after {
+            content: '';
+            height: 0.5px;
+            width: 100%;
+            background-color: white;
+            display: block;
+        }
+
+        /* dropdown on hover */
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+        /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+        .sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            z-index: +1;
+            background-color: white;
+        }
+
+        .change {
+            text-decoration-color: black;
+            color: black;
+        }
+
+        .scrolltext {
+            color: #4d446b !important;
+        }
+
+        .scrolltext a {
+            color: #5268f2 !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Heading -->
+    <section class="colored-section" id="title">
+
+        <div class="container-fluid">
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand logo flex-grow-1 bd-highlight" href="https://mishipay.com/">
+                        <img id="mishipay-logo" width="90" height="40" style=" margin-right: 3rem;"
+                            src="https://mishipay.com/wp-content/uploads/2021/03/logo-light.svg"
+                            srcset="https://mishipay.com/wp-content/uploads/2021/03/logo-light.svg" alt="MishiPay"></a>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://mishipay.com/about/"
+                                    style="color: aliceblue; padding-right:1rem;">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false"
+                                    style="color: aliceblue; padding-right:1rem;">
+                                    Why MishiPay?
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">🛒 For Grocery &amp; Convenience Stores</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">🛍️ For Fashion &amp; Accessories Stores</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">✈️ For Travel Stores</a></li>
+                                    <li><a class="dropdown-item" href="#">Integrations &amp; Store
+                                            Operations</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Theft
+                                            Prevention</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false"
+                                    style="color: aliceblue;  padding-right:1rem;">
+                                    Products
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">MishiPay Scan &amp; Go App</a>
+                                    <li><a class="dropdown-item" href="#">MishiPay Click &amp;
+                                            Collect</a>
+                                    <li><a class="dropdown-item" href="#">MishiPay Self Checkout
+                                            Kiosk</a>
+                                    <li><a class="dropdown-item" href="#">MishiPay SDK</a>
+                                    <li><a class="dropdown-item" href="#">MishiPay RFID Journeys</a>
+                                </ul>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://mishipay.com/casestudies/"
+                                    style="color: aliceblue; padding-right:1rem;">Case Studies</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://mishipay.com/blogs/"
+                                    style="color: aliceblue; padding-right:1rem;">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://mishipay.com/careers/"
+                                    style="color: aliceblue; padding-right:1rem;">Careers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="https://mishipay.com/contact/?utm_source=new+Sales+CTA&utm_medium=Nav"
+                                    style="color: aliceblue; padding-right:1rem;">Contact
+                                    Sales</a>
+                            </li>
+                            <button
+                                style="border-radius: 25px; padding: 10px 25px; background-color: white; border:1px solid white;   box-shadow: 0 20px 30px 0 rgb(9 78 130 / 20%);">
+                                <a href="https://mishipay.com/get-a-demo/"
+                                    style="text-decoration: none; color: #5268f2;">Get the Demo</a>
+                            </button>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Title -->
+
+            <div class="row heading" style="margin-top: 5rem;">
+                <div class="title-text col-lg-4 col-md-12">
+                    <h1 style="font-weight: 600;">Think Shopping,<br>Think MishiPay</h1>
+                    <p style="font-size: 150%;">Bring your in-store experience to the 21st century,
+                        eliminate queues and
+                        fight labor shortages:</p>
+                    <ul>
+                        <li><b>Scan &amp; Go&nbsp;</b></li>
+                    </ul>
+                    <ul>
+                        <li><b>Self Checkout Kiosk&nbsp;</b></li>
+                    </ul>
+                    <button class="title-button">Learn more</button>
+                </div>
+                <!-- Video -->
+                <div class="title-video col-lg-8 col-md-12">
+                    <iframe width="100%" height="427" src="https://www.youtube.com/embed/Dfc7mz9Ebco"
+                        title="MishiPay Live With Flying Tiger Copenhagen" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen
+                        style="margin-right: 6rem; border-radius: 25px; box-sizing: border-box;"></iframe>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands -->
+    <section class="white-section1" style="z-index: -1;">
+        <div class="container-fluid">
+            <h2>Generating Value For 30 Brands In 14 Countries</h2>
+            <div class="brands">
+                <div class="card-group">
+                    <div class="flex-container row">
+                        <div class="card col-lg-2 col-md-4 col-sm-12 brand-img"
+                            style="margin-left: 2rem; border: 0px solid white; height:6rem;">
+                            <img class="card-img-top" src="images/muji-logo.webp" alt="muji-logo"
+                                style="width: 10rem; height: 15rem; align-items: center;">
+                        </div>
+                        <div class="card col-lg-2 col-md-4 col-sm-12 brand-img"
+                            style="margin-left: 2rem; border: 0px solid white; height:6rem;">
+                            <img class="card-img-top" src="images/spar-logo.webp" alt="muji-logo" style="width: 10rem;">
+                        </div>
+                        <div class="card col-lg-2 col-md-4 col-sm-12 brand-img"
+                            style="margin-left: 2rem; border: 0px solid white; height:6rem;">
+                            <img class="card-img-top" src="images/eroski-logo.webp" alt="muji-logo"
+                                style="width: 10rem;">
+                        </div>
+                        <div class="card col-lg-2 col-md-4 col-sm-12 brand-img"
+                            style="margin-left: 2rem; border: 0px solid white; height:6rem;">
+                            <img class="card-img-top" src="images/flying-tiger-logo.webp" alt="muji-logo"
+                                style="width: 10rem;">
+                        </div>
+                        <div class="card col-lg-2 col-md-4 col-sm-12 brand-img"
+                            style="margin-left: 2rem; border: 0px solid white; height:6rem;">
+                            <img class="card-img-top" src="images/hudson-logo.webp" alt="muji-logo"
+                                style="width: 10rem;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-group">
+                    <div class="flex-container row">
+                        <div class="card col-lg-2 col-md-4 col-sm-12 brand-img"
+                            style="border: 0px solid white; margin-left: 2rem; height:6rem;">
+                            <img class="card-img-top" src="images/blooming_wear-logo.webp" alt="muji-logo"
+                                style="width: 10rem;">
+                        </div>
+                        <div class="card col-lg-2 col-md-4 col-sm-12 brand-img"
+                            style="border: 0px solid white; margin-left: 2rem; height:6rem;">
+                            <img class="card-img-top" src="images/londis-logo.webp" alt="muji-logo"
+                                style="width: 10rem;">
+                        </div>
+                        <div class="card col-lg-2 col-md-4 col-sm-12 brand-img"
+                            style="border: 0px solid white; margin-left: 2rem; height:6rem;">
+                            <img class="card-img-top" src="images/virgin-mega-store-logo.webp" alt="muji-logo"
+                                style="width: 10rem;">
+                        </div>
+                        <div class="card col-lg-2 col-md-4 col-sm-12 brand-img"
+                            style="border: 0px solid white; margin-left: 2rem; height:6rem;">
+                            <img class="card-img-top" src="images/paradies-logo.webp" alt="muji-logo"
+                                style="width: 10rem;">
+                        </div>
+                        <div class="card col-lg-2 col-md-4 col-sm-12 brand-img"
+                            style="border: 0px solid white; margin-left: 2rem; background: none;">
+                            <img class="card-img-top" src="images/loves-logo.webp" alt="muji-logo"
+                                style="width: 10rem;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- View Button -->
+        <button class="view-button">View all case studies <i class="fa-solid fa-angle-right"></i></button>
+    </section>
+
+    <!-- Business -->
+    <section class="white-section2">
+        <div class="container-fluid">
+            <h2>MishiPay For Your Business</h2>
+            <div class="flex-container row">
+                <!-- <div class="col-lg-4">
+                    <p class="numbers" id="num1"></p><br>
+                    <p class="context">Increase in sales from eliminating abandoned baskets</p>
+                </div> -->
+                <div class="col-lg-4">
+                    <div class="business-value">
+                        <h6 class="numbers" id="num1"></h6><span style="margin: 0;" class="numbers">%</span>
+                    </div>
+                    <br>
+                    <p class="context">Increase in sales from eliminating abandoned baskets</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="business-value">
+                        <h6 class="numbers" id="num2"></h6><span style="margin: 0;" class="numbers">%</span>
+                    </div>
+                    <br>
+                    <p class="context">Increase in basket value</p>
+                </div>
+                <div class="col-lg-4">
+                    <div class="business-value">
+                        <h6 class="numbers" id="num3"></h6><span style="margin: 0;" class="numbers">%</span>
+                    </div>
+                    <br>
+                    <p class="context">Of shoppers checkout with MishiPay</p>
+                </div>
+
+            </div>
+    </section>
+
+    <!-- Display -->
+
+    <section class="display">
+        <div class="card-group">
+            <div class="flex-container row">
+                <div class="col-lg-4 col-md-12 col-sm-12 card" style="min-height: 423px;min-width: 550px;margin: 10px;">
+                    <div class="cardimg">
+                        <img class="card-img-top"
+                            src="https://i0.wp.com/mishipay.com/wp-content/uploads/2021/02/Muji-launch.jpg?fit=768%2C360&ssl=1"
+                            height="200px" width="550px" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Poppins',sans-serif!important;
+              font-weight: 600!important;
+              color: #4c5267;">Scan & Go</h5>
+                        <p class="card-text">Generating value for more than 30 brands across Grocery, Convenience,
+                            Travel,
+                            Fashion and Variety stores</p>
+                        <a href="#" class="btn btn-primary card-button">View more</a>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 card display-card" style="width:550px;margin: 10px;">
+                    <div class="cardimg">
+
+                        <img class="card-img-top"
+                            src="https://i0.wp.com/mishipay.com/wp-content/uploads/2022/07/MishiPay-Kiosk-in-FTC.jpg?fit=768%2C576&ssl=1"
+                            height="270px" width="550px" alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-family: 'Poppins',sans-serif!important;
+              font-weight: 600!important;
+              color: #4c5267;">Self Checkout Kiosk</h5>
+                        <p class="card-text">Builds on top of Scan and Go Integration, no extra intergration is needed.
+                        </p>
+                        <a href="#" class="btn btn-primary card-button">View more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution -->
+    <section class="solution">
+        <!-- carosel solutions-->
+        <div class="container-fluid" id="testimonials">
+            <div class="slide-up btns">
+                <h1 class="solution-title">The Most Advanced Scan & Go Solution</h1>
+                <a id="sol1" class="testimonial-btn dot" onclick="currentSlide(1)">For Your Brand</a>
+                <a id="sol2" class="testimonial-btn dot" onclick="currentSlide(2)">More than Scan and Go</a>
+                <a id="sol3" class="testimonial-btn dot" onclick="currentSlide(3)">For Your Staff</a>
+                <a id="sol4" class="testimonial-btn dot" onclick="currentSlide(4)">Secure Checkout</a>
+                <a id="sol5" class="testimonial-btn dot" onclick="currentSlide(5)">Shopper Data Insights</a>
+                <a id="sol6" class="testimonial-btn dot" onclick="currentSlide(6)">Item Recommendations</a>
+                <div>
+                    <hr class="seperation">
+                </div>
+            </div>
+
+            <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active first" id="for-your-brand">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img class="testimonial-image slide-up1" src="images/app-screen.webp">
+                            </div>
+                            <div class="col-lg-6 item-content">
+                                <h3 class="testimonial-text">Bespoke branding built uniquely for you</h3>
+                                <p class="para">Showcase your brand on the MishiPay App with tailored screens across the
+                                    shopper's
+                                    journey, from the scanner to the receipt.</p>
+                                <a href="" class="item-content-btn">Check 30+ more features</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" id="more-than-scan">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img class="testimonial-image" src="images/product-recommendation-shopping-list.webp">
+                            </div>
+                            <div class="col-lg-6 item-content">
+                                <h3 class="testimonial-text" style="padding-top: 1rem; margin-bottom: 15px;">30+
+                                    powerful features that are available for all retail
+                                    sectors including grocery, convenience, lifestyle, sports and fashion</h3>
+                                <p class="para" style="line-height: 1.6;">Any phone, any payment method, any time.
+                                    MishiPay delivers solutions to meet the
+                                    requirements of retailers in all sectors. Find out more about our solutions for
+                                    weighted/loose items and alcohol purchases, offline mode, shopping lists,
+                                    recommendations & referrals.</p>
+                                <a href="" class="item-content-btn">Try it now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" id="for-your-staff">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img class="testimonial-image" src="images/for-your-staff.webp">
+                            </div>
+                            <div class="col-lg-6 item-content">
+                                <h3 class="testimonial-text">The MishiPay dashboard: For HQ, store managers and store
+                                    staff</h3>
+                                <p class="para">From unlocking powerful new data insights about shopper
+                                    behaviour to verifying alcohol purchases made via MishiPay, the Dashboard is the
+                                    back office solution that powers your store</p>
+                                <a href="" class="item-content-btn">Find out how</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" id="secure-checkout">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img class="testimonial-image" src="images/mobile-self-checkout.webp">
+                            </div>
+                            <div class="col-lg-6 item-content">
+                                <h3 class="testimonial-text">Secure checkout</h3>
+                                <p class="para">MishiPay integrates with your store's security systems and runs smart
+                                    algorithms
+                                    allowing customers with approved items to leave the store without triggering the
+                                    alarm.</p>
+                                <a href="" class="item-content-btn">More information</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" id="shopper-data">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img class="testimonial-image" src="images/shopper-browsing.webp">
+                            </div>
+                            <div class="col-lg-6 item-content">
+                                <h3 class="testimonial-text">Shopper data insights</h3>
+                                <p class="para">Shoppers scan 3x as many items as they buy. Gain valuable insight into
+                                    how your
+                                    customers are browsing and shopping.</p>
+                                <a href="" class="item-content-btn">Our numbers</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-item" id="recommendations">
+                        <div class="row">
+                            <div class="col-lg-6 item-img">
+                                <img class="testimonial-image" style="height: 30.5rem; width: 20rem;"
+                                    src="images/Item-recommendation-mishipay.webp">
+                            </div>
+                            <div class="col-lg-6 item-content">
+                                <h3 class="testimonial-text">Item Recommendations</h3>
+                                <p class="para">Your floor staff can't be everywhere, that's why MishiPay shows advanced
+                                    recommendations that drive basket increase. Hyper-personalised, based on past
+                                    experiences and thousands of anonymised data.</p>
+                                <a href="" class="item-content-btn">For more
+                                    information</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- Control Arrows -->
+                <a class="carousel-control-prev control-arrows" href="#testimonial-carousel" role="button"
+                    data-slide="prev">
+                    <button class="angle-button"><i class="fa-solid fa-angle-left angle-icon"></i></button>
+                </a>
+
+                <a class="carousel-control-next control-arrows" href="#testimonial-carousel" role="button"
+                    data-slide="next">
+                    <button class="angle-button"><i class="fa-solid fa-angle-right angle-icon"></i></button>
+                </a>
+            </div>
+        </div>
+
+        <!-- carosel clients-->
+        <div class="container-fluid" id="client-testimonials">
+            <h2 class="clients-title">What Our Clients Think:</h2>
+
+            <div id="carouselClientThoughts" class="carousel slide client-carousel" data-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="card">
+                            <img class="client-image-client" src="images/muji-logo.webp">
+                            <h3 class="card-title"><b>David Brice</b></h3>
+                            <h4>Managing Director, MUJI UK</h4>
+                            <div class="card-body">
+                                <p class="card-text">“The in-store experience for customers has always been an important
+                                    part of
+                                    the Muji brand, and MishiPay’s mobile self-checkout solution has allowed us to
+                                    create a new
+                                    level of convenience. Not only are customers enjoying being able to check out
+                                    without
+                                    queuing or touching hardware, but our staff are also more free to help, advise and
+                                    add real
+                                    value to the shopping experience rather than processing payments.”</p>
+                                <br>
+                                <td>⭐⭐⭐⭐⭐</td>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" style="align-items: center;">
+                        <div class="card">
+                            <img class="client-image-client" style="align-self:center"
+                                src="images/blooming_wear-logo.webp">
+                            <h3><b>Chris Donelly</b></h3>
+                            <h4>IT Director, BWG</h4>
+                            <div class="card-body">
+                                <p class="card-text">“A safer and quicker shopping experience. The current pandemic has
+                                    accelerated the need for consumer-facing businesses to embrace new technologies that
+                                    make
+                                    shopping experiences safer, quicker and altogether more convenient”</p>
+                                <br>
+                                <td>⭐⭐⭐⭐⭐</td>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img class="client-image-client" style="align-self:center"
+                                src="images/flying-tiger-logo.webp">
+                            <h3><b>Martin Jermin</b></h3>
+                            <h4>CEO, Flying Tiger Copenhagen</h4>
+                            <div class="card-body">
+                                <p class="card-text">All of the products in our stores are designed to make people
+                                    happy, but we
+                                    recognise that the checkout experience sometimes makes it a somewhat less happy
+                                    experience.
+                                    MishiPay helps us in this respect by removing the need to wait in line to pay. Also,
+                                    we are
+                                    excited to see the impact the technology can have on the operation and customer
+                                    experience
+                                    of our stores by enabling our store teams to focus on serving and advising customers
+                                    rather
+                                    than staffing checkouts.</p>
+                                <br>
+                                <td>⭐⭐⭐⭐⭐</td>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card">
+                            <img class="client-image-client" style="align-self:center" src="images/paradies-logo.webp">
+                            <h3><b>Greg Paradis</b></h3>
+                            <h4>President & CEO, Paradies Lagardere</h4>
+                            <div class="card-body">
+                                <p class="card-text">We are thrilled to partner with MishiPay to deliver this next
+                                    generation
+                                    service that will further enhance our customer’s experience in our airport retail
+                                    stores.
+                                    Yet another accomplishment in our ongoing digital strategy efforts, the Scan, Pay &
+                                    Go
+                                    technology is a significant step to the future of travel retail. Early results from
+                                    our
+                                    pilots at Fort Lauderdale-Hollywood International Airport and Charlotte Douglas
+                                    International Airport show that travelers are embracing this user-friendly service.
+                                </p>
+                                <td>⭐⭐⭐⭐⭐</td>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Control arrows -->
+                    <a class="carousel-control-prev control-arrows" href="#carouselClientThoughts" role="button"
+                        data-slide="prev">
+                        <button class="arrow-button"><i class="fa-solid fa-arrow-left arrow-icon"></i></button>
+                    </a>
+
+                    <a class="carousel-control-next control-arrows" href="#carouselClientThoughts" role="button"
+                        data-slide="next">
+                        <button class="arrow-button"><i class="fa-solid fa-arrow-right arrow-icon"></i></button>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Case studies + As seen on -->
+    <section class="case-studies">
+        <!-- Case studies -->
+        <section class="case-studies">
+            <h2 class="case-title">Our Case Studies</h2>
+            <div class="card-deck">
+                <div class="flex-container row">
+                    <div class="col-lg-4 col-md-12 col-sm-12 card case-studies-card" style="width: 22rem;">
+                        <img class="card-img-top case-img" src="images/emma-sleep.webp"
+                            style="width: 22rem; align-self: center;" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Emma Sleep Scan & Go | MishiPay Case Studies.</p>
+                            <a href="">Read More >></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 card case-studies-card" style="width: 22rem; padding: 0;">
+                        <img class="card-img-top case-img" src="images/virgin-megastore.webp"
+                            style="width: 22rem; align-self: center;" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Virgin Megastore Scan & Go electronic goods results | MishiPay Case
+                                Studies
+                            </p><a href="">Read More >></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12 card case-studies-card" style="width: 22rem; padding: 0;">
+                        <img class="card-img-top case-img" src="images/leading-variety-retailer-banner.webp"
+                            style="align-self:center; width:22rem" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text">Flying Tiger Copenhagen Scan & Go Case Study | MishiPay Case Studies
+                            </p><a href="">Read More >></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- as seen on  -->
+            <div class="container-fluid">
+                <h2 class="seen-title">As Seen On</h2>
+                <div class="flex-container row">
+                    <div class="col-lg-2 col-md-4 col-sm-12"><img class="seen-logo" src="images/logo_bloomberg.webp"
+                            alt="Bloomer"></div>
+                    <div class="col-lg-2 col-md-4 col-sm-12"><img class="seen-logo" src="images/logo_forbes.webp"
+                            alt="Forbes"></div>
+                    <div class="col-lg-2 col-md-4 col-sm-12"><img class="seen-logo" src="images/logo_techcrunch.webp"
+                            alt="TechCrunch"></div>
+                    <div class="col-lg-2 col-md-4 col-sm-12"><img class="seen-logo"
+                            src="images/logo_managementtoday.webp" alt="ManagementToday"></div>
+                    <div class="col-lg-2 col-md-4 col-sm-12"><img class="seen-logo" src="images/logo_wired.webp"
+                            alt="wired"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Download -->
+        <section class="">
+
+
+        </section>
+
+        <!-- Partners -->
+        <section class="partners">
+
+            <div class="container-fluid">
+                <h2 class="partner-title">Our Partners</h2>
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide"><img src="images/microsoft.webp" alt="microsoft-logo"></div>
+                        <div class="slide"><img src="images/sap.webp" alt="sap"></div>
+                        <div class="slide"><img src="images/avery-dennison.webp" alt="avery-dennison"></div>
+                        <div class="slide"><img src="images/cisco.webp" alt="cisco"></div>
+                        <div class="slide"><img src="images/nedap.webp" alt="nedap"></div>
+                        <div class="slide"><img src="images/bnp-paribas.webp" alt="bnp-paribas"></div>
+                        <div class="slide"><img src="images/zebra.webp" alt="zebra"></div>
+                        <div class="slide"><img src="images/true.webp" alt="true"></div>
+                        <div class="slide"><img src="images/deloitte.webp" alt="deloitte"></div>
+
+                        <div class="slide"><img src="images/microsoft.webp" alt="microsoft-logo"></div>
+                        <div class="slide"><img src="images/sap.webp" alt="sap"></div>
+                        <div class="slide"><img src="images/avery-dennison.webp" alt="avery-dennison"></div>
+                        <div class="slide"><img src="images/cisco.webp" alt="cisco"></div>
+                        <div class="slide"><img src="images/nedap.webp" alt="nedap"></div>
+                        <div class="slide"><img src="images/bnp-paribas.webp" alt="bnp-paribas"></div>
+                        <div class="slide"><img src="images/zebra.webp" alt="zebra"></div>
+                        <div class="slide"><img src="images/true.webp" alt="true"></div>
+                        <div class="slide"><img src="images/deloitte.webp" alt="deloitte"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Footer -->
+        <section class="Footer">
+
+        </section>
+
+
+        <!-- External Js -->
+        <script type="text/javascript" src="script.js"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+</body>
+
+</html>
